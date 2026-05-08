@@ -42,7 +42,7 @@ nav {
   text-transform: uppercase;
   color: var(--mid);
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.28s ease, opacity 0.28s ease;
 }
 
 .nav-links a::after {
@@ -1365,8 +1365,10 @@ nav {
 
 /* FOOTER */
 footer {
+  /* --- Footer refinement: subtle border + softer palette continuity --- */
   background: #221e1c;
-  padding: 60px;
+  border-top: 1px solid rgba(216, 207, 196, 0.18);
+  padding: 64px 60px 56px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1397,9 +1399,10 @@ footer {
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.25);
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.28s ease, opacity 0.28s ease;
 }
 
 .footer-links a:hover {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(216, 207, 196, 0.72);
+  opacity: 0.92;
 }
