@@ -1,2 +1,2 @@
-# lumiere
+# Nail Salon Lumière
 大人女性向けネイルサロンを想定し、上品なUIと世界観設計にこだわって制作したLPです。
