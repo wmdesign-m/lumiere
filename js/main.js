@@ -105,10 +105,11 @@ function setupHamburgerMenu() {
     closeMenu();
   });
 
+  // キーボード操作: Escでモバイルメニューを閉じる
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
-      closeMenu();
-    }
+    if (event.key !== "Escape") return;
+    if (!document.body.classList.contains("menu-open")) return;
+    closeMenu();
   });
 
   window.addEventListener("resize", () => {

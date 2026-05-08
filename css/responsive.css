@@ -46,9 +46,19 @@
     display: grid;
     gap: 2px;
     padding: 14px;
-    background: linear-gradient(180deg, #fffefa 0%, #fbf7f1 100%);
-    border: 1px solid rgba(216, 207, 196, 0.75);
-    box-shadow: 0 18px 48px rgba(45, 35, 23, 0.1);
+    /* モバイルメニュー: Lumièreらしい柔らかなアイボリー + ガラス感 */
+    background: linear-gradient(
+      165deg,
+      rgba(250, 245, 236, 0.9) 0%,
+      rgba(245, 238, 228, 0.82) 52%,
+      rgba(241, 233, 222, 0.76) 100%
+    );
+    border: 1px solid rgba(224, 211, 195, 0.72);
+    box-shadow:
+      0 20px 44px rgba(45, 35, 23, 0.14),
+      inset 0 1px 0 rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(14px) saturate(112%);
+    -webkit-backdrop-filter: blur(14px) saturate(112%);
     opacity: 0;
     visibility: hidden;
     transform: translateY(-8px);
@@ -70,6 +80,21 @@
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+  }
+
+  /* メニュー表示中: 背景スクロール固定 + 薄い暗幕オーバーレイ */
+  body.menu-open {
+    overflow: hidden;
+  }
+
+  body.menu-open::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(40, 32, 24, 0.18);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    z-index: 90;
   }
 
   body.menu-open .nav-toggle span:nth-child(1) {
