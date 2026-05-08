@@ -135,7 +135,13 @@ nav {
 
 .hero-title em {
   font-style: italic;
-  color: var(--mid);
+  /* HEROの「ちゃんと綺麗。」にだけ、上品なミルクティーベージュの光感を付与 */
+  background: linear-gradient(90deg, #c8b39b 0%, #e6d5b8 45%, #b79f86 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  opacity: 0.92;
 }
 
 .hero-subtitle {
