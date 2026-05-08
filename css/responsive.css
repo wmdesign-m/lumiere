@@ -169,8 +169,8 @@
   /* tablet: 2 columns */
   .gallery-grid {
     padding: 0 32px;
+    /* タブレットでも正方形を崩さない 2 カラム */
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-rows: none;
     gap: 14px;
   }
 
@@ -178,7 +178,7 @@
   .gallery-item:first-child {
     grid-column: auto;
     grid-row: auto;
-    min-height: 250px;
+    min-height: 0;
   }
 
   .gallery-thumb {
@@ -315,7 +315,8 @@
   }
 
   .gallery-item {
-    min-height: 215px;
+    /* SP でも aspect-ratio に委譲して 1:1 を維持 */
+    min-height: 0;
   }
 
   /* --- SP gallery label readability tuning --- */

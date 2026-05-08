@@ -700,19 +700,22 @@ nav {
   margin: 0 auto;
   padding: 0 60px;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 280px 280px;
-  gap: 4px;
+  /* gallery は全画面幅で均一な正方形グリッドを維持 */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
 }
 
 .gallery-item {
   overflow: hidden;
   position: relative;
   background: #eee;
+  /* 固定 height 依存をなくし、常に 1:1 を維持 */
+  aspect-ratio: 1 / 1;
 }
 
 .gallery-item:first-child {
-  grid-row: 1 / 3;
+  /* 先頭要素の縦スパンを解除して全アイテムを正方形に統一 */
+  grid-row: auto;
 }
 
 .gallery-thumb {
