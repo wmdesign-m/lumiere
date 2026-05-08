@@ -98,6 +98,19 @@ function setupHamburgerMenu() {
     });
   });
 
+  // メニュー外クリックとEscで閉じる（モバイル操作時の誤タップ対策）
+  document.addEventListener("click", (event) => {
+    if (!document.body.classList.contains("menu-open")) return;
+    if (menu.contains(event.target) || toggle.contains(event.target)) return;
+    closeMenu();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeMenu();
+    }
+  });
+
   window.addEventListener("resize", () => {
     if (window.innerWidth >= 960) {
       closeMenu();
