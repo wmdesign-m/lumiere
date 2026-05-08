@@ -56,8 +56,9 @@
   }
 
   .nav-links a {
+    /* 可読性確保: モバイルでは13px以上にして誤読を防ぐ */
     display: block;
-    font-size: 11px;
+    font-size: 13px;
     padding: 12px 10px;
   }
 
@@ -233,7 +234,8 @@
   }
 
   .hero-desc {
-    font-size: 13px;
+    /* 可読性確保: 390/375pxでも本文が小さくなりすぎないよう調整 */
+    font-size: 14px;
     margin-bottom: 30px;
   }
 
