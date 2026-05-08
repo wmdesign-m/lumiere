@@ -72,6 +72,22 @@
     padding: 12px 10px;
   }
 
+  .nav-links a::after {
+    /* モバイル下線はPC世界観に寄せて、主張を少し抑えた繊細なトーンに統一 */
+    left: 10px;
+    width: calc(100% - 20px);
+    background: rgba(216, 207, 196, 0.62);
+    transform: scaleX(0.92);
+    transform-origin: left center;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+  }
+
+  .nav-links a:hover::after {
+    width: calc(100% - 20px);
+    opacity: 1;
+  }
+
   .nav-mobile-only {
     display: block;
   }
