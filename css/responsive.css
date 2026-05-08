@@ -73,19 +73,22 @@
   }
 
   .nav-links a::after {
-    /* モバイル下線はPC世界観に寄せて、主張を少し抑えた繊細なトーンに統一 */
+    /* モバイルメニュー専用: 文字数に左右されない固定長の繊細な下線で統一 */
+    width: 120px;
+    max-width: 120px;
+    height: 1px;
     left: 10px;
-    width: calc(100% - 20px);
-    background: rgba(216, 207, 196, 0.62);
-    transform: scaleX(0.92);
+    bottom: -10px;
+    background: rgba(120, 102, 88, 0.26);
+    transform: scaleX(0);
     transform-origin: left center;
-    opacity: 0;
-    transition: opacity 0.35s ease;
+    transition: transform 0.35s ease;
   }
 
-  .nav-links a:hover::after {
-    width: calc(100% - 20px);
-    opacity: 1;
+  .nav-links a:hover::after,
+  .nav-links a:focus-visible::after {
+    width: 120px;
+    transform: scaleX(1);
   }
 
   .nav-mobile-only {
