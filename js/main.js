@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setupRevealAnimation();
   setupMenuTabs();
   setupNavScrollEffect();
+  setupHamburgerMenu();
 });
 
 function setupRevealAnimation() {
@@ -59,5 +60,47 @@ function setupNavScrollEffect() {
   window.addEventListener("scroll", () => {
     nav.style.borderBottomColor =
       window.scrollY > 60 ? "rgba(216,207,196,0.5)" : "rgba(216,207,196,0.3)";
+  });
+}
+
+
+// Responsive hamburger menu
+function setupHamburgerMenu() {
+  const toggle = document.querySelector(".nav-toggle");
+  const menu = document.querySelector(".nav-links");
+
+  if (!toggle || !menu) return;
+
+  const closeMenu = () => {
+    document.body.classList.remove("menu-open");
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-label", "メニューを開く");
+  };
+
+  const openMenu = () => {
+    document.body.classList.add("menu-open");
+    toggle.setAttribute("aria-expanded", "true");
+    toggle.setAttribute("aria-label", "メニューを閉じる");
+  };
+
+  toggle.addEventListener("click", () => {
+    const isOpen = document.body.classList.contains("menu-open");
+    if (isOpen) {
+      closeMenu();
+      return;
+    }
+    openMenu();
+  });
+
+  menu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      closeMenu();
+    });
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 960) {
+      closeMenu();
+    }
   });
 }
