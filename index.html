@@ -61,12 +61,16 @@
     <!-- NAV -->
     <nav>
       <a href="#" class="nav-logo">Lumière <span>Nail Salon</span></a>
-      <ul class="nav-links">
+      <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="site-menu">
         <li><a href="#concerns">About</a></li>
         <li><a href="#menu">Menu</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#reviews">Reviews</a></li>
         <li><a href="#info">Access</a></li>
+        <li class="nav-mobile-only"><a href="#cta-final">Reservation</a></li>
       </ul>
       <a href="#cta-final" class="nav-cta">Reservation</a>
     </nav>
