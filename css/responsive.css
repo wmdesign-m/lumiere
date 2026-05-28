@@ -473,10 +473,11 @@
 
   .menu-table {
     border-collapse: separate;
-    border-spacing: 0 14px;
+    border-spacing: 0 18px;
   }
 
   .menu-table tr {
+    display: block;
     padding: 22px 20px;
     background: rgba(255, 255, 255, 0.72);
     border: 1px solid rgba(216, 207, 196, 0.62);
