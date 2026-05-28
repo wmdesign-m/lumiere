@@ -1706,8 +1706,10 @@ nav {
   filter: brightness(1.02) saturate(0.95);
 }
 
-.instagram-marquee:hover .instagram-track {
-  animation-play-state: paused;
+@media (hover: hover) and (pointer: fine) {
+  .instagram-marquee:hover .instagram-track {
+    animation-play-state: paused;
+  }
 }
 
 @keyframes instagramMarquee {
