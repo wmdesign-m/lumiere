@@ -127,7 +127,7 @@
   }
 
   .hero-left {
-    padding: 130px 32px 58px;
+    padding: 148px 32px 58px;
     margin: 0;
     max-width: none;
     transform: none;
@@ -316,7 +316,7 @@
   }
 
   .hero-left {
-    padding: clamp(104px, 18vh, 120px) 20px 44px;
+    padding: clamp(128px, 21vh, 146px) 20px 44px;
     margin: 0;
     max-width: none;
     transform: none;
@@ -362,7 +362,7 @@
   }
 
   .hero-right {
-    min-height: 400px;
+    min-height: 340px;
     padding-top: 0;
   }
 
@@ -375,7 +375,7 @@
   }
 
   .hero-image {
-    object-position: center 24%;
+    object-position: center 20%;
   }
 
   .hero-badge {
@@ -480,7 +480,9 @@
     padding: 24px 22px;
     background: rgba(255, 255, 255, 0.78);
     border: 1px solid rgba(216, 207, 196, 0.42);
-    box-shadow: 0 14px 34px rgba(69, 58, 50, 0.04), 0 2px 10px rgba(216, 207, 196, 0.08);      
+    box-shadow:
+      0 14px 34px rgba(69, 58, 50, 0.04),
+      0 2px 10px rgba(216, 207, 196, 0.08);
   }
 
   .menu-table tr:first-child {
@@ -746,7 +748,7 @@
    ========================================= */
 @media screen and (min-width: 960px) and (max-width: 1279px) {
   .hero-left {
-    padding: 40px 48px 40px 56px;
+    padding: 92px 48px 56px 56px;
   }
 
   .hero-desc {
@@ -761,6 +763,10 @@
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1499px) {
+  .hero-left {
+    padding: 92px 72px 56px 80px;
+  }
+
   .hero-desc {
     max-width: 500px;
     font-size: 16px;
@@ -773,6 +779,10 @@
 }
 
 @media screen and (min-width: 1500px) {
+  .hero-left {
+    padding: 96px 96px 56px 110px;
+  }
+
   .hero-desc {
     max-width: 620px;
     font-size: 17px;

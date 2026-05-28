@@ -104,8 +104,37 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px 80px 40px 100px;
-  background: linear-gradient(135deg, #ffffff 0%, #f7f5f2 52%, #e8e2dc 100%);
+
+  padding: 92px 80px 56px 100px;
+
+  background:
+    radial-gradient(
+      circle at 12% 18%,
+      rgba(255, 255, 255, 0.96) 0%,
+      rgba(255, 255, 255, 0.72) 18%,
+      rgba(255, 255, 255, 0) 42%
+    ),
+    radial-gradient(
+      circle at 82% 78%,
+      rgba(232, 226, 220, 0.42) 0%,
+      rgba(232, 226, 220, 0) 44%
+    ),
+    linear-gradient(135deg, #ffffff 0%, #f7f2ed 42%, #e7d8cc 74%, #d9c4b4 100%);
+}
+
+.hero-left::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.18) 0%,
+    rgba(255, 255, 255, 0) 28%
+  );
+
+  pointer-events: none;
 }
 
 .hero-eyebrow .brand-name {
@@ -227,7 +256,7 @@ nav {
   object-position: 60% center;
   display: block;
   transform: scale(1.01);
-  filter: brightness(0.98) saturate(0.92);
+  filter: brightness(1) saturate(1.02) contrast(0.98);
 }
 
 .hero-right::after {
@@ -843,7 +872,7 @@ nav {
 
 /* GALLERY */
 #gallery {
-  background: var(--off-white);
+  background: linear-gradient(180deg, #fcfaf8 0%, #f3ebe4 44%, #e7d8cc 100%);
   padding: 100px 0;
 }
 
@@ -1040,7 +1069,7 @@ nav {
 
 /* FLOW */
 #flow {
-  background: var(--off-white);
+  background: #f4eee8a7;
 }
 
 .flow-header {
@@ -1607,9 +1636,9 @@ nav {
   content: "";
   position: absolute;
   top: 50%;
-  width: 6px;
+  width: 8px;
   height: 1px;
-  background: rgba(216, 207, 196, 0.68);
+  background: rgba(140, 121, 108, 0.72);
 }
 
 .cta-final-note span::before {
