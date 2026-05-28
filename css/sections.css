@@ -1675,6 +1675,8 @@ nav {
     color 0.3s ease,
     opacity 0.3s ease,
     transform 0.3s ease;
+
+  cursor: pointer;
 }
 
 .instagram-link img {
@@ -1694,6 +1696,33 @@ nav {
 .instagram-link:hover img {
   opacity: 0.84;
   transform: scale(1.04);
+}
+
+.instagram-link span {
+  position: relative;
+  padding-right: 16px;
+}
+
+.instagram-link span::after {
+  content: "↗";
+
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  transform: translateY(-52%);
+
+  font-size: 11px;
+  opacity: 0.72;
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.instagram-link:hover span::after {
+  transform: translate(2px, -52%);
+  opacity: 1;
 }
 
 .instagram-marquee {
