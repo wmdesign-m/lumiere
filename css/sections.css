@@ -1586,10 +1586,38 @@ nav {
 }
 
 .cta-final-note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
   font-size: 12px;
   letter-spacing: 0.16em;
+  text-align: center;
   color: rgba(47, 41, 37, 0.72);
   margin-bottom: 36px;
+}
+
+.cta-final-note span {
+  position: relative;
+  padding: 0 18px;
+}
+
+.cta-final-note span::before,
+.cta-final-note span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 6px;
+  height: 1px;
+  background: rgba(216, 207, 196, 0.68);
+}
+
+.cta-final-note span::before {
+  left: 0;
+}
+
+.cta-final-note span::after {
+  right: 0;
 }
 
 .cta-final-actions {
