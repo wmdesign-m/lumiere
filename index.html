@@ -19,7 +19,10 @@
       content="シンプルなのに、ちゃんと綺麗。大人女性の毎日に寄り添う、上品で洗練されたネイルデザインをご提案する架空ネイルサロンLPです。"
     />
     <meta property="og:url" content="https://wmdesign-m.github.io/lumiere/" />
-    <meta property="og:image" content="https://wmdesign-m.github.io/lumiere/images/ogp.webp" />
+    <meta
+      property="og:image"
+      content="https://wmdesign-m.github.io/lumiere/images/ogp.webp"
+    />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:site_name" content="Nail Salon Lumière" />
@@ -34,15 +37,15 @@
       name="twitter:description"
       content="シンプルなのに、ちゃんと綺麗。大人女性の毎日に寄り添う、上品で洗練されたネイルデザインをご提案するネイルサロンLP（デモ）です。"
     />
-    <meta name="twitter:image" content="https://wmdesign-m.github.io/lumiere/images/ogp.webp" />
+    <meta
+      name="twitter:image"
+      content="https://wmdesign-m.github.io/lumiere/images/ogp.webp"
+    />
 
     <link rel="icon" href="images/favicon.ico" />
-    <!-- TODO: ファイル追加が必要: images/favicon-32.png -->
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
-    <!-- TODO: ファイル追加が必要: images/favicon-16.png -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png" />
-    <!-- TODO: ファイル追加が必要: images/apple-touch-icon.png -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -52,15 +55,25 @@
     />
 
     <link rel="stylesheet" href="css/reset.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/sections.css" />
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
+
   <body>
-    <!-- NAV -->
     <nav>
-      <a href="#" class="nav-logo">Lumière <span>Nail Salon</span></a>
-      <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-menu">
+      <a href="#hero" class="nav-logo">Lumière <span>Nail Salon</span></a>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="メニューを開く"
+        aria-expanded="false"
+        aria-controls="site-menu"
+      >
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="site-menu">
@@ -69,30 +82,35 @@
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#reviews">Reviews</a></li>
         <li><a href="#info">Access</a></li>
-        <li class="nav-mobile-only"><a href="#cta-final">Reservation</a></li>
+        <li class="nav-mobile-only"><a href="#cta-final">Reserve</a></li>
       </ul>
-      <a href="#cta-final" class="nav-cta">Reservation</a>
+      <a href="#cta-final" class="nav-cta">Reserve</a>
     </nav>
 
-    <!-- HERO -->
     <section id="hero">
       <div class="hero-left">
-        <p class="hero-eyebrow fade-up">Nail Salon Lumière · 表参道</p>
+        <p class="hero-eyebrow fade-up">
+          Nail Salon <span class="brand-name">Lumière</span> · 表参道
+        </p>
         <h1 class="hero-title fade-up delay-1">
-          シンプルなのに、<br />
+          <span class="hero-title-line">シンプルなのに、</span><br />
           <em>ちゃんと綺麗。</em>
         </h1>
         <p class="hero-subtitle fade-up delay-2">
           Refined Nails for Modern Women
         </p>
         <p class="hero-desc fade-up delay-2">
-          指先が整うと、気持ちまで少し整う。<br />
-          大人女性の毎日に寄り添う、上品で洗練されたネイルデザインを。<br />
-          丁寧なカウンセリングと確かな技術で、あなたらしい美しさを引き出します。
+          <span>指先が整うと、気持ちまで少し整う。</span><br />
+          <span
+            >大人女性の毎日に寄り添う、上品で洗練されたネイルデザインを。</span
+          ><br />
+          <span
+            >丁寧なカウンセリングと確かな技術で、あなたらしい美しさを引き出します。</span
+          >
         </p>
         <div class="hero-actions fade-up delay-3">
-          <a href="#cta-final" class="btn-primary">ご予約はこちら</a>
-          <a href="#menu" class="hero-sub-link">メニューを見る</a>
+          <a href="#cta-final" class="btn-primary">空き状況を確認する</a>
+          <a href="#menu" class="hero-sub-link">メニューを確認する</a>
         </div>
       </div>
 
@@ -137,7 +155,7 @@
               1〜2週間でリフトしてしまう。もっと長持ちするネイルが欲しい。
             </p>
           </div>
-          <div class="concern-card reveal" style="transition-delay: 0.1s">
+          <div class="concern-card reveal reveal-delay-1">
             <span class="concern-num">02</span>
             <div class="concern-icon"></div>
             <p class="concern-text">仕上がりに<br />ムラがある</p>
@@ -145,7 +163,7 @@
               サロンによって仕上がりの差が大きく、安定した品質のお店が見つからない。
             </p>
           </div>
-          <div class="concern-card reveal" style="transition-delay: 0.2s">
+          <div class="concern-card reveal reveal-delay-2">
             <span class="concern-num">03</span>
             <div class="concern-icon"></div>
             <p class="concern-text">落ち着いて<br />過ごせない</p>
@@ -153,7 +171,7 @@
               騒がしい空間や、急かされるような雰囲気が苦手。ゆっくりできるサロンがない。
             </p>
           </div>
-          <div class="concern-card reveal" style="transition-delay: 0.3s">
+          <div class="concern-card reveal reveal-delay-3">
             <span class="concern-num">04</span>
             <div class="concern-icon"></div>
             <p class="concern-text">自分に合う<br />デザインが分からない</p>
@@ -170,9 +188,11 @@
       <div class="container">
         <div class="solutions-header reveal">
           <div class="section-label section-label-center">
-            Lumière が選ばれる理由
+            <span class="brand-name">Lumière</span> が選ばれる理由
           </div>
-          <h2 class="section-title">すべての悩みに、<em>丁寧な答えを。</em></h2>
+          <h2 class="section-title">
+            すべての悩みに、<br class="sp-only" /><em>丁寧な答えを。</em>
+          </h2>
         </div>
         <div class="solutions-grid">
           <div class="solution-card reveal">
@@ -195,7 +215,7 @@
               下処理から丁寧に行い、爪へのダメージを最小限に抑えながら、長持ちする美しいネイルを実現。平均持続期間は約4〜6週間です。
             </p>
           </div>
-          <div class="solution-card reveal" style="transition-delay: 0.12s">
+          <div class="solution-card reveal reveal-delay-1">
             <div class="solution-icon-wrap">
               <svg
                 viewBox="0 0 24 24"
@@ -214,7 +234,7 @@
               お客様の生活スタイル、お好み、爪の状態を丁寧にお伺いします。言葉にしにくい「なんとなくのイメージ」もしっかりと形にします。
             </p>
           </div>
-          <div class="solution-card reveal" style="transition-delay: 0.24s">
+          <div class="solution-card reveal reveal-delay-2">
             <div class="solution-icon-wrap">
               <svg
                 viewBox="0 0 24 24"
@@ -240,7 +260,9 @@
     <!-- WHY -->
     <section id="why">
       <div class="container">
-        <div class="section-label reveal">Why Lumière</div>
+        <div class="section-label reveal">
+          Why <span class="brand-name">Lumière</span>
+        </div>
         <h2 class="section-title reveal">選ばれる、<em>3つの理由。</em></h2>
         <div class="why-layout">
           <div class="why-list">
@@ -253,7 +275,7 @@
                 </p>
               </div>
             </div>
-            <div class="why-item reveal" style="transition-delay: 0.1s">
+            <div class="why-item reveal reveal-delay-1">
               <span class="why-num">02</span>
               <div class="why-content">
                 <h3 class="why-title">落ち着いて過ごせる空間</h3>
@@ -262,7 +284,7 @@
                 </p>
               </div>
             </div>
-            <div class="why-item reveal" style="transition-delay: 0.2s">
+            <div class="why-item reveal reveal-delay-2">
               <span class="why-num">03</span>
               <div class="why-content">
                 <h3 class="why-title">大人女性向けの洗練デザイン</h3>
@@ -310,7 +332,7 @@
           <span class="gallery-label">Milky Pink</span>
         </div>
 
-        <div class="gallery-item reveal" style="transition-delay: 0.1s">
+        <div class="gallery-item reveal reveal-delay-1">
           <img
             src="images/gallery-02.jpg"
             alt="落ち着いたグレージュネイル"
@@ -319,7 +341,7 @@
           <span class="gallery-label">Greige Tone</span>
         </div>
 
-        <div class="gallery-item reveal" style="transition-delay: 0.15s">
+        <div class="gallery-item reveal reveal-delay-1">
           <img
             src="images/gallery-03.jpg"
             alt="ハンドとフットのナチュラルネイル"
@@ -328,7 +350,7 @@
           <span class="gallery-label">Hand & Foot</span>
         </div>
 
-        <div class="gallery-item reveal" style="transition-delay: 0.2s">
+        <div class="gallery-item reveal reveal-delay-2">
           <img
             src="images/gallery-04.jpg"
             alt="ツヤ感のあるシアーベージュネイル"
@@ -337,7 +359,7 @@
           <span class="gallery-label">Sheer Beige</span>
         </div>
 
-        <div class="gallery-item reveal" style="transition-delay: 0.25s">
+        <div class="gallery-item reveal reveal-delay-2">
           <img
             src="images/gallery-05.jpg"
             alt="上品なヌードベージュネイル"
@@ -346,7 +368,7 @@
           <span class="gallery-label">Nude Elegance</span>
         </div>
 
-        <div class="gallery-item reveal" style="transition-delay: 0.3s">
+        <div class="gallery-item reveal reveal-delay-3">
           <img
             src="images/gallery-06.jpg"
             alt="ナチュラルで洗練されたネイル"
@@ -491,7 +513,7 @@
             </p>
             <span class="flow-step-tag">約 15 分</span>
           </div>
-          <div class="flow-step reveal" style="transition-delay: 0.15s">
+          <div class="flow-step reveal reveal-delay-1">
             <div class="flow-step-num">02</div>
             <h3 class="flow-step-title">施術</h3>
             <p class="flow-step-desc">
@@ -499,7 +521,7 @@
             </p>
             <span class="flow-step-tag">約 60〜90 分</span>
           </div>
-          <div class="flow-step reveal" style="transition-delay: 0.3s">
+          <div class="flow-step reveal reveal-delay-2">
             <div class="flow-step-num">03</div>
             <h3 class="flow-step-title">仕上げ・ご案内</h3>
             <p class="flow-step-desc">
@@ -518,57 +540,132 @@
           <div class="section-label section-label-center">Customer Voice</div>
           <h2 class="section-title">お客様の<em>声</em></h2>
         </div>
-        <div class="reviews-grid">
-          <div class="review-card reveal">
-            <div class="review-stars">
-              <div class="star"></div>
-              <div class="star"></div>
-              <div class="star"></div>
-              <div class="star"></div>
-              <div class="star"></div>
+        <div class="reviews-swiper swiper reveal">
+          <div class="swiper-wrapper">
+            <div class="review-card swiper-slide">
+              <div class="review-stars">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
+              <p class="review-text">
+                “シンプルなのに手元がとても綺麗に見えて、毎日気分が上がります。落ち着いた空間で相談しやすかったです。”
+              </p>
+              <div class="review-divider"></div>
+              <p class="review-author">
+                30代・会社員
+                <span>One Color / Nude Beige</span>
+              </p>
             </div>
-            <p class="review-text">
-              "どのサロンよりも持ちが良く、3週間経っても全く浮いてきません。丁寧な下処理がしっかり活きているのだと感じます。"
-            </p>
-            <div class="review-divider"></div>
-            <p class="review-author">
-              M.S. 様
-              <span>会社員・34歳 / 月1回ご利用</span>
-            </p>
+
+            <div class="review-card swiper-slide">
+              <div class="review-stars">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
+              <p class="review-text">
+                “派手すぎない上品なデザインを提案していただき、仕事中も自然に馴染みました。仕上がりもとても丁寧です。”
+              </p>
+              <div class="review-divider"></div>
+              <p class="review-author">
+                40代・受付
+                <span>French / Greige Tone</span>
+              </p>
+            </div>
+
+            <div class="review-card swiper-slide">
+              <div class="review-stars">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
+              <p class="review-text">
+                “爪の状態を見ながら丁寧に施術してくれて安心できました。ナチュラルなのに、きちんと感のある仕上がりです。”
+              </p>
+              <div class="review-divider"></div>
+              <p class="review-author">
+                20代・美容関係
+                <span>Sheer Beige / Care</span>
+              </p>
+            </div>
+
+            <div class="review-card swiper-slide">
+              <div class="review-stars">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
+              <p class="review-text">
+                “希望をうまく言葉にできなくても、雰囲気を汲み取って提案してくれました。上品で肌なじみの良い仕上がりに満足しています。”
+              </p>
+              <div class="review-divider"></div>
+              <p class="review-author">
+                30代・広報
+                <span>Gradation / Pink Beige</span>
+              </p>
+            </div>
+
+            <div class="review-card swiper-slide">
+              <div class="review-stars">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
+              <p class="review-text">
+                “爪の形まで丁寧に整えてもらえるので、シンプルなカラーでも手元が綺麗に見えます。落ち着いた時間を過ごせるのも嬉しいです。”
+              </p>
+              <div class="review-divider"></div>
+              <p class="review-author">
+                40代・自営業
+                <span>One Color / Mocha Beige</span>
+              </p>
+            </div>
+
+            <div class="review-card swiper-slide">
+              <div class="review-stars">
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span>
+              </div>
+              <p class="review-text">
+                “仕事柄派手なデザインはできませんが、控えめでもきちんと華やかに見える提案をしていただけました。またお願いしたいです。”
+              </p>
+              <div class="review-divider"></div>
+              <p class="review-author">
+                30代・医療関係
+                <span>French / Sheer Pink</span>
+              </p>
+            </div>
           </div>
-          <div class="review-card reveal" style="transition-delay: 0.12s">
-            <div class="review-stars">
-              <div class="star"></div>
-              <div class="star"></div>
-              <div class="star"></div>
-              <div class="star"></div>
-              <div class="star"></div>
-            </div>
-            <p class="review-text">
-              "上品で落ち着いた空間で、毎回リラックスできます。デザインの提案も的確で、自分では思いつかないような素敵な仕上がりになります。"
-            </p>
-            <div class="review-divider"></div>
-            <p class="review-author">
-              K.T. 様
-              <span>フリーランス・38歳 / 月1回ご利用</span>
-            </p>
-          </div>
-          <div class="review-card reveal" style="transition-delay: 0.24s">
-            <div class="review-stars">
-              <div class="star"></div>
-              <div class="star"></div>
-              <div class="star"></div>
-              <div class="star"></div>
-              <div class="star"></div>
-            </div>
-            <p class="review-text">
-              "オフィスにも馴染む控えめなデザインを相談したところ、本当にイメージ通りに仕上げていただきました。毎回安心してお任せできます。"
-            </p>
-            <div class="review-divider"></div>
-            <p class="review-author">
-              Y.N. 様
-              <span>管理職・42歳 / 2ヶ月に1回ご利用</span>
-            </p>
+
+          <div class="reviews-controls">
+            <button
+              class="reviews-arrow reviews-prev"
+              type="button"
+              aria-label="前のレビューを見る"
+            >
+              ←
+            </button>
+            <button
+              class="reviews-arrow reviews-next"
+              type="button"
+              aria-label="次のレビューを見る"
+            >
+              →
+            </button>
           </div>
         </div>
       </div>
@@ -643,19 +740,40 @@
                   >東京メトロ表参道駅<br />A4出口より徒歩3分</span
                 >
               </div>
+
               <div class="info-row">
                 <span class="info-row-label">予約</span>
-                <span class="info-row-value"
-                  >完全予約制<br /><span class="info-subtext"
-                    >当日予約はお電話にてご確認ください</span
-                  ></span
-                >
+                <span class="info-row-value">
+                  完全予約制<br />
+                  <span class="info-subtext">
+                    ご予約・お問い合わせはInstagram DMより承っております
+                  </span>
+                </span>
               </div>
+
               <div class="info-row">
                 <span class="info-row-label">Instagram</span>
-                <span class="info-row-value info-instagram"
-                  >@lumiere_nailsalon</span
-                >
+
+                <span class="info-row-value info-instagram-wrap">
+                  <a
+                    href="https://www.instagram.com/"
+                    class="info-instagram"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    @lumiere_nailsalon
+                  </a>
+
+                  <a
+                    href="https://www.instagram.com/"
+                    class="info-instagram-icon"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagramを開く"
+                  >
+                    <img src="images/icon-sns.png" alt="Instagram" />
+                  </a>
+                </span>
               </div>
             </div>
           </div>
@@ -666,26 +784,31 @@
     <!-- FINAL CTA -->
     <section id="cta-final">
       <div class="cta-final-inner">
-        <p class="cta-final-label reveal">Nail Salon Lumière</p>
+        <p class="cta-final-label reveal">
+          Nail Salon <span class="brand-name">Lumière</span>
+        </p>
         <h2 class="cta-final-title reveal">
           あなたの手元に、<br /><em>静かな美しさを。</em>
         </h2>
-        <p class="cta-final-desc reveal">完全予約制 · 表参道</p>
+        <p class="cta-final-desc reveal">表参道駅 徒歩3分</p>
         <p class="cta-final-note reveal">
-          初回カウンセリング付き / 完全予約制 / 表参道駅徒歩3分
+          初回カウンセリング付き / 完全予約制 / Instagram DMより受付
         </p>
         <div class="cta-final-actions reveal">
-          <a href="#" class="btn-light">オンライン予約</a>
+          <a href="#info" class="btn-light">空き状況を確認する</a>
           <a href="#menu" class="btn-outline-light">メニューを見る</a>
         </div>
       </div>
     </section>
 
-    <section class="instagram-preview">
+    <section id="instagram" class="instagram-preview">
       <div class="container">
         <div class="instagram-header">
           <p class="section-label section-label-center">Instagram</p>
           <h2 class="section-title">@lumiere_nailsalon</h2>
+          <p class="instagram-desc">
+            最新デザインや季節のネイルは、Instagramで更新しています。
+          </p>
         </div>
 
         <div class="instagram-marquee">
@@ -731,13 +854,14 @@
     <footer>
       <div class="footer-logo">Lumière</div>
       <div class="footer-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Instagram</a>
-        <a href="#">Contact</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#instagram">Instagram</a>
+        <a href="#cta-final">Contact</a>
       </div>
-      <p class="footer-copy">© 2025 Nail Salon Lumière. All rights reserved.</p>
+      <p class="footer-copy">© 2026 Nail Salon Lumière. All rights reserved.</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

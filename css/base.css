@@ -8,16 +8,21 @@
 
 :root {
   --white: #ffffff;
-  --off-white: #f7f7f7;
-  --beige: #d8cfc4;
-  --beige-light: #ede8e2;
-  --dark: #333333;
-  --mid: #777777;
-  --light-gray: #eaeaea;
+  --off-white: #f6f5f3;
 
-  --text-brown: #4f4338;
-  --text-brown-soft: rgba(79, 67, 56, 0.72);
-  --label-brown: rgba(92, 78, 66, 0.78);
+  --beige: #d2cbc3;
+  --beige-light: #ebe7e2;
+
+  --dark: #2f2a27;
+  --mid: #625b55;
+  --light-gray: #e3ded8;
+
+  --text-brown: #453d37;
+  --text-brown-soft: rgba(69, 61, 55, 0.84);
+  --label-brown: rgba(84, 76, 69, 0.92);
+
+  --num-beige: rgba(156, 139, 123, 0.68);
+  --num-beige-dark: rgba(210, 203, 195, 0.52);
 
   --font-serif: "Cormorant Garamond", Georgia, serif;
   --font-sans: "Noto Sans JP", "Lato", sans-serif;
@@ -81,8 +86,8 @@ section {
 }
 
 .section-label {
-  font-size: 12px;
-  letter-spacing: 0.18em;
+  font-size: 13px;
+  letter-spacing: 0.17em;
   text-transform: uppercase;
   color: rgba(92, 78, 66, 0.78);
   margin-bottom: 20px;
@@ -128,7 +133,12 @@ section {
   padding: 18px 44px;
   position: relative;
   overflow: hidden;
-  transition: all 0.35s;
+  transition:
+    background 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease,
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
 .btn-primary::before {
@@ -157,7 +167,7 @@ section {
   background: #555;
   transform: translateY(-2px);
 
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary:hover::before {
@@ -177,7 +187,12 @@ section {
   padding: 20px 56px;
   position: relative;
   overflow: hidden;
-  transition: all 0.35s;
+  transition:
+    background 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease,
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
 .btn-light::before {
@@ -204,7 +219,9 @@ section {
 .btn-light:hover {
   background: rgba(216, 207, 196, 0.82);
   transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+
+  box-shadow: 0 14px 34px rgba(69, 58, 50, 0.08);
+
   border-color: rgba(255, 255, 255, 0.28);
 }
 
@@ -217,12 +234,21 @@ section {
   text-transform: uppercase;
   text-decoration: none;
   padding: 20px 40px;
-  transition: all 0.35s;
+  transition:
+    background 0.35s ease,
+    color 0.35s ease,
+    border-color 0.35s ease,
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
 .btn-outline-light:hover {
   border-color: var(--beige);
   color: var(--beige);
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 14px 34px rgba(69, 58, 50, 0.06);
 }
 
 @keyframes fadeUp {
@@ -272,4 +298,37 @@ section {
     opacity 0.7s cubic-bezier(0.22, 0.61, 0.36, 1),
     transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1),
     filter 0.7s ease;
+}
+
+.brand-name {
+  font-family: var(--font-serif);
+  font-size: 1.22em;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0.09em;
+  color: inherit;
+}
+
+.sp-only {
+  display: none;
+}
+
+.reveal-delay-1 {
+  transition-delay: 0.1s;
+}
+
+.reveal-delay-2 {
+  transition-delay: 0.2s;
+}
+
+.reveal-delay-3 {
+  transition-delay: 0.3s;
+}
+
+.reveal-delay-4 {
+  transition-delay: 0.4s;
+}
+
+.reveal-delay-5 {
+  transition-delay: 0.5s;
 }

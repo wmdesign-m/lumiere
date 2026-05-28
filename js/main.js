@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setupMenuTabs();
   setupNavScrollEffect();
   setupHamburgerMenu();
+  setupReviewsSwiper();
 });
 
 function setupRevealAnimation() {
@@ -63,7 +64,6 @@ function setupNavScrollEffect() {
   });
 }
 
-
 // Responsive hamburger menu
 function setupHamburgerMenu() {
   const toggle = document.querySelector(".nav-toggle");
@@ -98,14 +98,12 @@ function setupHamburgerMenu() {
     });
   });
 
-  // メニュー外クリックとEscで閉じる（モバイル操作時の誤タップ対策）
   document.addEventListener("click", (event) => {
     if (!document.body.classList.contains("menu-open")) return;
     if (menu.contains(event.target) || toggle.contains(event.target)) return;
     closeMenu();
   });
 
-  // キーボード操作: Escでモバイルメニューを閉じる
   document.addEventListener("keydown", (event) => {
     if (event.key !== "Escape") return;
     if (!document.body.classList.contains("menu-open")) return;
@@ -116,5 +114,46 @@ function setupHamburgerMenu() {
     if (window.innerWidth >= 960) {
       closeMenu();
     }
+  });
+}
+
+function setupReviewsSwiper() {
+  if (typeof Swiper === "undefined") return;
+
+  const reviewsSwiper = document.querySelector(".reviews-swiper");
+  if (!reviewsSwiper) return;
+
+  new Swiper(".reviews-swiper", {
+    slidesPerView: 1.45,
+    centeredSlides: true,
+    loop: true,
+    speed: 700,
+    effect: "coverflow",
+    grabCursor: true,
+
+    navigation: {
+      nextEl: ".reviews-next",
+      prevEl: ".reviews-prev",
+    },
+
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 40,
+      depth: 180,
+      modifier: 1,
+      slideShadows: false,
+    },
+
+    breakpoints: {
+      0: {
+        slidesPerView: 1.14,
+      },
+      560: {
+        slidesPerView: 1.25,
+      },
+      960: {
+        slidesPerView: 1.45,
+      },
+    },
   });
 }
