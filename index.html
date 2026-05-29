@@ -116,21 +116,28 @@
 
       <div class="hero-right">
         <div class="hero-image-wrap">
-          <img
-            src="images/hero-nail-minimal.jpg"
-            alt="上品でミニマルなネイルデザイン"
-            class="hero-image"
-            width="1200"
-            height="1400"
-            loading="eager"
-            fetchpriority="high"
-          />
+          <picture>
+            <source media="(max-width: 559px)" srcset="images/hero-sp.jpg" />
+
+            <source media="(max-width: 959px)" srcset="images/hero-tb.jpg" />
+
+            <img
+              src="images/hero-main.jpg"
+              alt="上品で洗練されたネイルデザイン"
+              class="hero-image"
+              width="1200"
+              height="1400"
+              loading="eager"
+              fetchpriority="high"
+            />
+          </picture>
         </div>
         <div class="hero-badge fade-up delay-4">
-          <span class="hero-badge-num"
-            >98<small class="hero-badge-small">%</small></span
-          >
-          <span class="hero-badge-label">Customer Satisfaction</span>
+          <span class="hero-badge-label"> Beauty in Simplicity </span>
+
+          <span class="hero-badge-subtitle">
+            <span class="brand-name">Lumière</span> NAIL SALON
+          </span>
         </div>
       </div>
     </section>
@@ -319,7 +326,7 @@
           <div class="section-label">Gallery</div>
           <h2 class="section-title">デザインギャラリー</h2>
         </div>
-        <a href="#menu" class="gallery-link">全てのデザインを見る</a>
+        <a href="#menu" class="gallery-link">メニューを確認する</a>
       </div>
 
       <div class="gallery-grid">
@@ -688,7 +695,7 @@
           <div class="faq-item reveal">
             <h3>ネイルの持ちはどのくらいですか？</h3>
             <p>
-              爪の状態や生活習慣により異なりますが、約3〜4週間を目安にご案内しています。
+              爪の状態や生活習慣により異なりますが、約4〜6週間を目安にご案内しています。
             </p>
           </div>
           <div class="faq-item reveal">
@@ -797,8 +804,8 @@
           <span>Instagram DMより受付</span>
         </p>
         <div class="cta-final-actions reveal">
-          <a href="#info" class="btn-light">空き状況を確認する</a>
-          <a href="#menu" class="btn-outline-light">メニューを見る</a>
+          <a href="#info" class="btn-light">予約方法を確認する</a>
+          <a href="#menu" class="btn-outline-light">メニューを確認する</a>
         </div>
       </div>
     </section>
@@ -809,18 +816,20 @@
           <p class="section-label section-label-center">Instagram</p>
           <h2 class="section-title">@lumiere_nailsalon</h2>
           <p class="instagram-desc">
-            最新デザインや季節のネイルは、<br class="sp-only" />Instagramで更新しています。
+            最新デザインや季節のネイルは、<br
+              class="sp-only"
+            />Instagramで更新しています。
           </p>
           <a
-  href="https://www.instagram.com/"
-  class="instagram-link"
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="Instagramを開く"
->
-  <img src="images/icon-sns.png" alt="Instagram" />
-  <span>View Instagram</span>
-</a>
+            href="https://www.instagram.com/"
+            class="instagram-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagramを開く"
+          >
+            <img src="images/icon-sns.png" alt="Instagram" />
+            <span>View Instagram</span>
+          </a>
         </div>
 
         <div class="instagram-marquee">
