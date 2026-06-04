@@ -536,6 +536,10 @@
     position: relative;
   }
 
+  .why-visual::before {
+  display: none;
+  }
+
   .why-list {
     order: 2;
   }
